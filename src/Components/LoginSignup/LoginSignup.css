@@ -35,7 +35,7 @@
     height: 6px;
     background: rgb(2, 2, 32);
     border-radius: 15px;
-    line: center;
+    text-underline-position: center;
 }
 
 .inputs{
@@ -102,5 +102,10 @@
     border-radius: 50px;
     font-size: 19px;
     cursor: pointer;
+}
+
+.gray{
+    background-color: #eaeaea;
+    color: #483a86;
 }
 

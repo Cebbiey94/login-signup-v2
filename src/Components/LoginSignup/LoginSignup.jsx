@@ -11,7 +11,7 @@ export const LoginSignup = () => {
 
   return (
     <div className='container'>
-        <div className='hearder'>
+        <div className='header'>
           <div className="text">{action}</div>
           <div className='underline'></div>
         </div>
@@ -33,8 +33,8 @@ export const LoginSignup = () => {
           </div>
           <div className="forgot password">Lost Password? <span>Click here!</span></div>
           <div className="submit-container">
-            <div className={action==="Login" ? "submit gray" : "submi"} onClick={()=>{setAction("Sign Up")}}>Sign Up</div>
-            <div className={action==="Sign Up" ? "submit gray" : "submit"} onClick={()=>{setAction("Login")}}>Login</div>
+            <div className={action==="Login" ? "submit gray" : "submit"} onClick={()=>{setAction("Sign Up")}} onClick={()=>{setAction("Sign Up")}}>Sign Up</div>
+            <div className={action==="Sign Up" ? "submit gray" : "submit"} onClick={()=>{setAction("Login")}}onClick={()=>{setAction("Login")}}>Login</div>
 
           </div>
 
